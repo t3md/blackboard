@@ -1,6 +1,6 @@
 <?php
 
-namespace Gg\Blackboard\Domain\Model\Dto;
+namespace T3md\Blackboard\Domain\Model\Dto;
 
 use TYPO3\CMS\Core\Configuration\ExtensionConfiguration;
 use TYPO3\CMS\Core\Utility\GeneralUtility;
