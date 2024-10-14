@@ -1,6 +1,6 @@
 <?php
 
-$configuration = \TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance(\Gg\Blackboard\Domain\Model\Dto\EmConfiguration::class);
+$configuration = \TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance(\T3md\Blackboard\Domain\Model\Dto\EmConfiguration::class);
 
 return [
     'ctrl' => [
