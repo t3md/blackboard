@@ -1,6 +1,6 @@
 <?php
 
-namespace Gg\Blackboard\Domain\Model;
+namespace T3md\Blackboard\Domain\Model;
 
 
 /**
