@@ -1,2 +1,2 @@
 # blackboard
-Extenion for the GG Intranet
+Extension for the GG Intranet
