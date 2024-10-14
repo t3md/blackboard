@@ -1,7 +1,7 @@
 config.tx_extbase {
     persistence {
         classes {
-            Gg\Blackboard\Domain\Model\FileReference {
+            T3md\Blackboard\Domain\Model\FileReference {
                 mapping {
                         tableName = sys_file_reference
                     columns {
