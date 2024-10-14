@@ -1,0 +1,29 @@
+plugin.tx_blackboard_pi1 {
+    view {
+        templateRootPaths.0 = EXT:blackboard/Resources/Private/Templates/
+        templateRootPaths.1 = {$plugin.tx_blackboard_pi1.view.templateRootPath}
+        partialRootPaths.0 = EXT:blackboard/Resources/Private/Partials/
+        partialRootPaths.1 = {$plugin.tx_blackboard_pi1.view.partialRootPath}
+        layoutRootPaths.0 = EXT:blackboard/Resources/Private/Layouts/
+        layoutRootPaths.1 = {$plugin.tx_blackboard_pi1.view.layoutRootPath}
+    }
+    persistence {
+        storagePid = {$plugin.tx_blackboard_pi1.persistence.storagePid}
+        #recursive = 1
+    }
+    features {
+        #skipDefaultArguments = 1
+        # if set to 1, the enable fields are ignored in BE context
+        ignoreAllEnableFieldsInBe = 0
+    }
+    mvc {
+        #callDefaultActionIfActionCantBeResolved = 1
+    }
+}
+
+
+page.includeCSS{
+   	offer                            =  {$plugin.tx_blackboard_pi1.scss.offer}
+    offer.linenumber                 =  true    
+	offer.outputStyle                =  compressed 
+}
