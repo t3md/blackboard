@@ -13,7 +13,7 @@ use TYPO3\CMS\Extbase\Property\PropertyMappingConfiguration;
  * For the full copyright and license information, please read the
  * LICENSE.txt file that was distributed with this source code.
  *
- * (c) 2023 Michael Lang
+ * (c) 2024 Michael Lang
  */
 
 /**
