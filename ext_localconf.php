@@ -17,7 +17,7 @@ $GLOBALS['TYPO3_CONF_VARS']['SYS']['fluid']['namespaces']['gg'] = ['Gg\\Blackboa
         ]
         );
     
-    $GLOBALS['TYPO3_CONF_VARS']['SYS']['fluid']['namespaces']['gg'] = ['Gg\\Blackboard\\ViewHelpers'];
+    $GLOBALS['TYPO3_CONF_VARS']['SYS']['fluid']['namespaces']['t3md'] = ['T3md\\Blackboard\\ViewHelpers'];
     
     // wizards
     \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPageTSConfig(
