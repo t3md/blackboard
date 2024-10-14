@@ -1,5 +1,5 @@
 {
-    "name": "gg/blackboard",
+    "name": "t3md/blackboard",
     "type": "typo3-cms-extension",
     "description": "",
     "authors": [
@@ -12,17 +12,14 @@
     "require": {
         "typo3/cms-core": "^11.5"
     },
-    "require-dev": {
-        "typo3/testing-framework": "^6.9.0"
-    },
     "autoload": {
         "psr-4": {
-            "Gg\\Blackboard\\": "Classes"
+            "T3md\\Blackboard\\": "Classes"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Gg\\Blackboard\\Tests\\": "Tests"
+            "T3md\\Blackboard\\Tests\\": "Tests"
         }
     },
     "replace": {
@@ -31,11 +28,6 @@
     "config": {
         "vendor-dir": ".Build/vendor",
         "bin-dir": ".Build/bin"
-    },
-    "scripts": {
-        "post-autoload-dump": [
-            "TYPO3\\TestingFramework\\Composer\\ExtensionTestEnvironment::prepare"
-        ]
     },
     "extra": {
         "typo3/cms": {
