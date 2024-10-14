@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Gg\Blackboard\Domain\Repository;
+namespace T3md\Blackboard\Domain\Repository;
 
 
 /**
