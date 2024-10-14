@@ -1,6 +1,6 @@
 <?php
 
-namespace Gg\Blackboard\ViewHelpers\Data;
+namespace T3md\Blackboard\ViewHelpers\Data;
 
 use Closure;
 use TYPO3\CMS\Core\Context\Context;
