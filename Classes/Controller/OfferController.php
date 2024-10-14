@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Gg\Blackboard\Controller;
+namespace T3md\Blackboard\Controller;
 
-use Gg\Blackboard\Property\TypeConverter\UploadedFileReferenceConverter;
+use T3md\Blackboard\Property\TypeConverter\UploadedFileReferenceConverter;
 use TYPO3\CMS\Extbase\Property\PropertyMappingConfiguration;
 
 /**
@@ -25,14 +25,14 @@ class OfferController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionController
     /**
      * offerRepository
      *
-     * @var \Gg\Blackboard\Domain\Repository\OfferRepository
+     * @var \T3md\Blackboard\Domain\Repository\OfferRepository
      */
     protected $offerRepository = null;
 
     /**
-     * @param \Gg\Blackboard\Domain\Repository\OfferRepository $offerRepository
+     * @param \T3md\Blackboard\Domain\Repository\OfferRepository $offerRepository
      */
-    public function injectOfferRepository(\Gg\Blackboard\Domain\Repository\OfferRepository $offerRepository)
+    public function injectOfferRepository(\T3md\Blackboard\Domain\Repository\OfferRepository $offerRepository)
     {
         $this->offerRepository = $offerRepository;
     }
@@ -73,10 +73,10 @@ class OfferController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionController
     /**
      * action show
      *
-     * @param \Gg\Blackboard\Domain\Model\Offer $offer
+     * @param \T3md\Blackboard\Domain\Model\Offer $offer
      * @return \Psr\Http\Message\ResponseInterface
      */
-    public function showAction(\Gg\Blackboard\Domain\Model\Offer $offer): \Psr\Http\Message\ResponseInterface
+    public function showAction(\T3md\Blackboard\Domain\Model\Offer $offer): \Psr\Http\Message\ResponseInterface
     {
         $this->view->assign('offer', $offer);
         return $this->htmlResponse();
@@ -95,9 +95,9 @@ class OfferController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionController
     /**
      * action create
      *
-     * @param \Gg\Blackboard\Domain\Model\Offer $newOffer
+     * @param \T3md\Blackboard\Domain\Model\Offer $newOffer
      */
-    public function createAction(\Gg\Blackboard\Domain\Model\Offer $newOffer)
+    public function createAction(\T3md\Blackboard\Domain\Model\Offer $newOffer)
     {
 
         $this->offerRepository->add($newOffer);
@@ -107,11 +107,11 @@ class OfferController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionController
     /**
      * action edit
      *
-     * @param \Gg\Blackboard\Domain\Model\Offer $offer
+     * @param \T3md\Blackboard\Domain\Model\Offer $offer
      * @TYPO3\CMS\Extbase\Annotation\IgnoreValidation("offer")
      * @return \Psr\Http\Message\ResponseInterface
      */
-    public function editAction(\Gg\Blackboard\Domain\Model\Offer $offer): \Psr\Http\Message\ResponseInterface
+    public function editAction(\T3md\Blackboard\Domain\Model\Offer $offer): \Psr\Http\Message\ResponseInterface
     {
         $this->view->assign('offer', $offer);
         return $this->htmlResponse();
@@ -120,9 +120,9 @@ class OfferController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionController
     /**
      * action update
      *
-     * @param \Gg\Blackboard\Domain\Model\Offer $offer
+     * @param \T3md\Blackboard\Domain\Model\Offer $offer
      */
-    public function updateAction(\Gg\Blackboard\Domain\Model\Offer $offer)
+    public function updateAction(\T3md\Blackboard\Domain\Model\Offer $offer)
     {
                
         $this->addFlashMessage('The object was updated. Please be aware that this action is publicly accessible unless you implement an access check. See https://docs.typo3.org/p/friendsoftypo3/extension-builder/master/en-us/User/Index.html', '', \TYPO3\CMS\Core\Messaging\AbstractMessage::WARNING);
@@ -133,9 +133,9 @@ class OfferController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionController
     /**
      * action delete
      *
-     * @param \Gg\Blackboard\Domain\Model\Offer $offer
+     * @param \T3md\Blackboard\Domain\Model\Offer $offer
      */
-    public function deleteAction(\Gg\Blackboard\Domain\Model\Offer $offer)
+    public function deleteAction(\T3md\Blackboard\Domain\Model\Offer $offer)
     {
         $this->offerRepository->remove($offer);
         $this->redirect('list');
@@ -144,9 +144,9 @@ class OfferController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionController
     /**
      * action deleteConfirm
      * 
-     * @param \Gg\Blackboard\Domain\Model\Offer $offer
+     * @param \T3md\Blackboard\Domain\Model\Offer $offer
      */
-    public function deleteConfirmAction(\Gg\Blackboard\Domain\Model\Offer $offer)
+    public function deleteConfirmAction(\T3md\Blackboard\Domain\Model\Offer $offer)
     {
         $this->view->assign('offer', $offer);
         return $this->htmlResponse();
