@@ -1,0 +1,20 @@
+
+.blackboardOffers{
+	li                                  {transition: background ease .3s; border: 1px solid #ccc; border-radius: 5px; background: rgba(255,255,255,.75);}
+	li:hover                            {background: rgba(255,255,255,1);}
+	
+	li > .Offerbody						{padding: 12px;}
+	li > .Offerinfo						{padding: 12px; border-top: 1px solid #dadada}
+	li > h4							    {padding: px 12px 12px 0; font-weight: bold; display: flex; align-items: center;}	
+	
+	
+	li.offer > h4:before				{border-radius: 5px 0 0 0; content:'\F0EC'; margin-right: .5rem; display: flex; width: 2rem; align-items: center; justify-content: center; height: 2rem; color: #fff; font-family: $symbol; text-align: center; background: #0B8720;  }
+	li.searchfor > h4:before	    	{border-radius: 5px 0 0 0; content:'\F002'; margin-right: .5rem; display: flex; width: 2rem; align-items: center; justify-content: center; height: 2rem; color: #fff; font-family: $symbol; text-align: center; background: #84120E;  }	
+
+	span.totime:before	                {content:'\F017'; margin-right: .5rem; font-family: $symbol;   }
+	.btn-danger                         {color: #fff;}
+	.btn-dark                           {color: #fff !important;}
+	.btn-success                        {color: #fff;}
+	.btn-danger                         {color: #fff !important;}	
+	
+}

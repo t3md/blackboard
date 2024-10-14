@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="de" datatype="plaintext" original="EXT:blackboard/Resources/Private/Language/locallang.xlf" date="2023-01-28T11:03:50Z" product-name="blackboard">
+		<header/>
+		<body>
+			<trans-unit id="tx_blackboard_domain_model_offer">
+				<source>Offer</source>
+				<target state="translated">Angebot</target>
+			</trans-unit>
+			<trans-unit id="tx_blackboard_domain_model_offer.title">
+				<source>Title</source>
+				<target state="translated">Titel</target>
+			</trans-unit>
+			<trans-unit id="tx_blackboard_domain_model_offer.author">
+				<source>Author</source>
+				<target state="translated">Name</target>
+			</trans-unit>
+			<trans-unit id="tx_blackboard_domain_model_offer.email">
+				<source>Email</source>
+				<target state="translated">E-Mail</target>
+			</trans-unit>
+			<trans-unit id="tx_blackboard_domain_model_offer.description">
+				<source>Description</source>
+				<target state="translated">Beschreibung</target>
+			</trans-unit>
+			<trans-unit id="tx_blackboard_domain_model_offer.kind">
+				<source>Kind</source>
+				<target state="translated">Art</target>
+			</trans-unit>
+			<trans-unit id="tx_blackboard_domain_model_offer.kind.0">
+				<source>Please secect</source>
+				<target state="translated">Bitte wählen</target>
+			</trans-unit>
+			<trans-unit id="tx_blackboard_domain_model_offer.kind.1">
+				<source>Offer</source>
+				<target state="translated">Angebot</target>
+			</trans-unit>
+			<trans-unit id="tx_blackboard_domain_model_offer.kind.2">
+				<source>Search</source>
+				<target state="translated">Gesuch</target>
+			</trans-unit>
+			<trans-unit id="tx_blackboard_domain_model_offer.images">
+				<source>Images</source>
+				<target state="translated">Bilder</target>
+			</trans-unit>
+			<trans-unit id="tx_blackboard_domain_model_offer.files">
+				<source>Files</source>
+				<target state="translated">Dateien</target>
+			</trans-unit>
+			<trans-unit id="tx_blackboard_domain_model_offer.enddate">
+				<source>Enddate</source>
+				<target state="translated">Befristet bis</target>
+			</trans-unit>	
+			<trans-unit id="tx_blackboard_domain_model_offer.del">
+				<source>Delete</source>
+				<target state="translated">Löschen</target>
+			</trans-unit>		
+			<trans-unit id="tx_blackboard_domain_model_offer.nodel">
+				<source>No, don't delete!</source>
+				<target state="translated">Nein, nicht löschen, abbrechen!</target>
+			</trans-unit>		
+			<trans-unit id="tx_blackboard_domain_model_offer.yesdel">
+				<source>Yes, delete!</source>
+				<target state="translated">Ja, löschen!</target>
+			</trans-unit>		
+			<trans-unit id="tx_blackboard_domain_model_offer.would">
+				<source>Would you really like to delete this offer!</source>
+				<target state="translated">Möchten Sie dieses Angebot wirklich löschen!</target>
+			</trans-unit>	
+			<trans-unit id="tx_blackboard_domain_model_offer.h2">
+				<source>Delete offer?</source>
+				<target state="translated">Angebot löschen?</target>
+			</trans-unit>						
+			<trans-unit id="tx_blackboard_domain_model_offer.edit">
+				<source>Edit</source>
+				<target state="translated">Bearbeiten</target>
+			</trans-unit>
+			<trans-unit id="tx_blackboard_domain_model_offer.new">
+				<source>New offer</source>
+				<target state="translated">Neues Angebot/Gesuch anlegen</target>
+			</trans-unit>		
+			<trans-unit id="tx_blackboard_domain_model_offer.newOffer">
+				<source>Save</source>
+				<target state="translated">Speichern</target>
+			</trans-unit>					
+			<trans-unit id="tx_blackboard_domain_model_offer.break">
+				<source>Break</source>
+				<target state="translated">Abbrechen</target>
+			</trans-unit>	
+			<trans-unit id="tx_blackboard_domain_model_offer.date">
+				<source>before saving, control the date</source>
+				<target state="translated">Vor dem Speichern bitte ein Datum eingeben!</target>
+			</trans-unit>	
+			<trans-unit id="tx_blackboard_domain_model_offer.tel">
+				<source>Phone</source>
+				<target state="translated">Telefon</target>				
+			</trans-unit>
+				
+		</body>
+	</file>
+</xliff>

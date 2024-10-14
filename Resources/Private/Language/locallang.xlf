@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="EXT:blackboard/Resources/Private/Language/locallang.xlf" date="2023-01-28T11:03:50Z" product-name="blackboard">
+		<header/>
+		<body>
+			<trans-unit id="tx_blackboard_domain_model_offer" resname="tx_blackboard_domain_model_offer">
+				<source>Offer</source>
+			</trans-unit>
+			<trans-unit id="tx_blackboard_domain_model_offer.title" resname="tx_blackboard_domain_model_offer.title">
+				<source>Title</source>
+			</trans-unit>
+			<trans-unit id="tx_blackboard_domain_model_offer.author" resname="tx_blackboard_domain_model_offer.author">
+				<source>Author</source>
+			</trans-unit>
+			<trans-unit id="tx_blackboard_domain_model_offer.email" resname="tx_blackboard_domain_model_offer.email">
+				<source>Email</source>
+			</trans-unit>
+			<trans-unit id="tx_blackboard_domain_model_offer.description" resname="tx_blackboard_domain_model_offer.description">
+				<source>Description</source>
+			</trans-unit>
+			<trans-unit id="tx_blackboard_domain_model_offer.kind" resname="tx_blackboard_domain_model_offer.kind">
+				<source>Kind</source>
+			</trans-unit>
+			<trans-unit id="tx_blackboard_domain_model_offer.images" resname="tx_blackboard_domain_model_offer.images">
+				<source>Images</source>
+			</trans-unit>
+			<trans-unit id="tx_blackboard_domain_model_offer.files" resname="tx_blackboard_domain_model_offer.files">
+				<source>Files</source>
+			</trans-unit>
+			<trans-unit id="tx_blackboard_domain_model_offer.enddate" resname="tx_blackboard_domain_model_offer.enddate">
+				<source>Enddate</source>
+			</trans-unit>
+			<trans-unit id="tx_blackboard_domain_model_offer.totime" resname="tx_blackboard_domain_model_offer.totime">
+				<source>totime</source>
+			</trans-unit>	
+			<trans-unit id="tx_blackboard_domain_model_offer.tel">
+				<source>Phone</source>
+			</trans-unit>	
+						
+				
+		</body>
+	</file>
+</xliff>

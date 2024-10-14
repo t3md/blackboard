@@ -1,0 +1,49 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+	<gg:data.user />
+
+	<div class="form-group col-12 col-md-6 mb-3 d-flex">
+		<label class="col-2" for="title"><f:translate key="tx_blackboard_domain_model_offer.title" /> <span class="required">*</span></label>
+		<f:form.textfield property="title" id="title" class="form-control" />
+	</div>
+	
+	<div class="form-group col-12 col-md-6 mb-3">
+		<label for="description"><f:translate key="tx_blackboard_domain_model_offer.description" /> <span class="required">*</span></label>
+		<f:form.textarea  property="description" id="description" class="form-control" />	
+	</div>	
+	
+	<div class="form-group col-12 col-md-6 mb-3 d-flex">	
+		<label class="col-2" for="author"><f:translate key="tx_blackboard_domain_model_offer.author"  /> <span class="required">*</span><span class="d-none">{loggedInUser.uid}</span></label>
+		<f:form.textfield property="author" id="author" class="form-control" value="{loggedInUser.firstname} {loggedInUser.lastname}" />
+	</div>	
+
+	<div class="form-group col-12 col-md-6 mb-3 d-flex">	
+		<label class="col-2" for="email"><f:translate key="tx_blackboard_domain_model_offer.email"  /> <span class="required">*</span></label>
+		<f:form.textfield property="email" id="email" class="form-control" value="{loggedInUser.email}" />
+	</div>	
+
+	<div class="form-group col-12 col-md-6 mb-3 d-flex">	
+		<label class="col-2" for="tel"><f:translate key="tx_blackboard_domain_model_offer.tel"  /></label>
+		<f:form.textfield property="tel" id="tel" class="form-control" value="{loggedInUser.telephone}" />
+	</div>
+	
+	 <div class="form-group col-12 col-md-6 mb-3 d-flex">	
+	 	<label class="col-2" for="kind"><f:translate key="tx_blackboard_domain_model_offer.kind"  /> <span class="required">*</span></label>
+		<f:form.select name="kind" property="kind" class="form-control w-auto form-select">
+	    	<f:form.select.option class="w-auto form-control" value=""><f:translate key="tx_blackboard_domain_model_offer.kind.0"  /></f:form.select.option>
+	    	<f:form.select.option class="w-auto form-control" value="0"><f:translate key="tx_blackboard_domain_model_offer.kind.1"  /></f:form.select.option>
+	    	<f:form.select.option class="w-auto form-control" value="1"><f:translate key="tx_blackboard_domain_model_offer.kind.2"  /></f:form.select.option>
+		</f:form.select>
+	</div>		
+		
+	 <div class="form-group col-12 col-md-6 mb-3 d-flex">	
+	 	<label class="col-2" for="endtime"><f:translate key="tx_blackboard_domain_model_offer.enddate"  /> <span class="required">*</span></label>	 
+		<f:form.textfield property="endtime" type="date" id="datepicker" value="{offer.endtime->f:format.date()}" class="w-auto form-control"  /><br />
+	</div>	
+	
+	<f:form.textfield class="d-none" property="endtime" id="endtime" value="{offer.endtime->f:format.date()}" />
+	
+	<f:form.textfield class="d-none" property="authoruid" id="authoruid" value="{loggedInUser.uid}" />
+	
+	
+
+</html>

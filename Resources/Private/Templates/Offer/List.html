@@ -1,0 +1,70 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+
+	<gg:data.user />
+
+	<div class="blackboardOffers">
+
+		 <f:security.ifAuthenticated>
+		       <f:link.action class="mb-4 btn btn-dark" action="new"><f:translate key="tx_blackboard_domain_model_offer.new"  /></f:link.action>
+		</f:security.ifAuthenticated>
+		
+		<div class="row">
+		
+			<div class="col-12 col-md-6">		
+				<ul class="p-0 mb-3 list-unstyled">
+			        <f:for each="{offers}" as="offer">
+			        	<f:if condition="{offer.kind} > 0">
+			        		<li class="mb-3 offer">
+				        		<h4>{offer.title}</h4>
+				            	<div class="Offerbody">{offer.description}</div>
+					            <div class="Offerinfo">
+				            		{offer.author}&nbsp;|&nbsp;
+				            		<a class="link-mail" href="mailto:{offer.email}">{offer.email}</a>&nbsp;|&nbsp;
+				            		<f:if condition="{offer.tel}"><a class="link-phone" href="tel:{offer.tel}">{offer.tel}</a>&nbsp;|&nbsp;</f:if>
+				            		<span class="totime" ><f:format.date format="d.m.Y">{offer.endtime}</f:format.date></span>
+				            	</div>
+				
+								<f:if condition="{loggedInUser.uid}">
+					                <f:if condition="{offer.authoruid} == {loggedInUser.uid}" >
+					                	<f:then>
+					               			<f:link.action class="btn btn-secondary" action="edit" arguments="{offer : offer}"><f:translate key="tx_blackboard_domain_model_offer.edit"  /></f:link.action>
+					               			<f:link.action class="btn btn-danger" action="deleteConfirm" arguments="{offer : offer}"><f:translate key="tx_blackboard_domain_model_offer.del"  /></f:link.action>
+					               		</f:then>
+					                </f:if>
+				                 </f:if>
+			            	</li>
+			            </f:if>	
+			        </f:for>
+				</ul>
+			</div>	
+		
+			<div class="col-12 col-md-6">
+					<ul class="p-0 mb-3 list-unstyled">
+				        <f:for each="{offers}" as="offer">
+				        	<f:if condition="{offer.kind} == 0">
+					        	<li class="mb-3  searchfor">
+					        		<h4>{offer.title}</h4>
+					            	<div class="Offerbody">{offer.description}</div>
+						            <div class="Offerinfo">
+					            		{offer.author}&nbsp;|&nbsp;
+					            		<a class="link-mail" href="mailto:{offer.email}">{offer.email}</a>&nbsp;|&nbsp;
+					            		<f:if condition="{offer.tel}"><a class="link-phone" href="tel:{offer.tel}">{offer.tel}</a>&nbsp;|&nbsp;</f:if>
+					            		<span class="totime" ><f:format.date format="d.m.Y">{offer.endtime}</f:format.date></span>
+					            	</div>
+									<f:if condition="{loggedInUser.uid}">
+						                <f:if condition="{offer.authoruid} == {loggedInUser.uid}" >
+						                	<f:then>
+						               			<f:link.action class="btn btn-secondary" action="edit" arguments="{offer : offer}"><f:translate key="tx_blackboard_domain_model_offer.edit"  /></f:link.action>
+						               			<f:link.action class="btn btn-danger" action="deleteConfirm" arguments="{offer : offer}"><f:translate key="tx_blackboard_domain_model_offer.del"  /></f:link.action>
+						               		</f:then>
+						                </f:if>
+					                 </f:if>
+					            </li>
+					         </f:if>   
+				        </f:for>
+					</ul>
+			</div>
+
+		</div>
+	</div>
+</html>

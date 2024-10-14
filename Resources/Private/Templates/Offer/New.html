@@ -1,0 +1,10 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+    <f:render partial="FormErrors" />
+    <f:form action="create" name="newOffer" object="{newOffer}" enctype="multipart/form-data">
+		<f:render partial="Offer/FormFields" />
+		<p><br /><strong><f:translate key="tx_blackboard_domain_model_offer.date"  /></strong><br /></p>
+		<f:link.action action="list" class="btn btn-secondary"><f:translate key="tx_blackboard_domain_model_offer.break"  /></f:link.action>		
+		<f:form.submit class="btn btn-success" value="{f:translate(key: 'tx_blackboard_domain_model_offer.newOffer')}"></f:form.submit>     
+    </f:form>
+
+</html>

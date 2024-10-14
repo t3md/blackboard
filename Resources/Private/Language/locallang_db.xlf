@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="EXT:blackboard/Resources/Private/Language/locallang_db.xlf" date="2023-01-28T11:03:50Z" product-name="blackboard">
+		<header/>
+		<body>
+			<trans-unit id="tx_blackboard_domain_model_offer" resname="tx_blackboard_domain_model_offer">
+				<source>Offer</source>
+			</trans-unit>
+			<trans-unit id="tx_blackboard_domain_model_offer.title" resname="tx_blackboard_domain_model_offer.title">
+				<source>Title</source>
+			</trans-unit>
+			<trans-unit id="tx_blackboard_domain_model_offer.author" resname="tx_blackboard_domain_model_offer.author">
+				<source>Author</source>
+			</trans-unit>
+			<trans-unit id="tx_blackboard_domain_model_offer.authoruid" resname="tx_blackboard_domain_model_offer.authoruid">
+				<source>User ID</source>
+			</trans-unit>			
+			<trans-unit id="tx_blackboard_domain_model_offer.email" resname="tx_blackboard_domain_model_offer.email">
+				<source>Email</source>
+			</trans-unit>
+			<trans-unit id="tx_blackboard_domain_model_offer.description" resname="tx_blackboard_domain_model_offer.description">
+				<source>Description</source>
+			</trans-unit>
+			<trans-unit id="tx_blackboard_domain_model_offer.kind" resname="tx_blackboard_domain_model_offer.kind">
+				<source>Kind</source>
+			</trans-unit>
+			<trans-unit id="tx_blackboard_domain_model_offer.tel" resname="tx_blackboard_domain_model_offer.tel">
+				<source>Phone</source>
+			</trans-unit>
+			<trans-unit id="tx_blackboard_domain_model_offer.image" resname="tx_blackboard_domain_model_offer.image">
+				<source>Images</source>
+			</trans-unit>
+			<trans-unit id="tx_blackboard_domain_model_offer.file" resname="tx_blackboard_domain_model_offer.file">
+				<source>Files</source>
+			</trans-unit>
+			<trans-unit id="tx_blackboard_domain_model_offer.enddate" resname="tx_blackboard_domain_model_offer.enddate">
+				<source>Enddate</source>
+			</trans-unit>		
+			
+			<trans-unit id="tx_blackboard_pi1.name" resname="tx_blackboard_pi1.name">
+				<source>GG Blackboard</source>
+			</trans-unit>
+			<trans-unit id="tx_blackboard_pi1.description" resname="tx_blackboard_pi1.description">
+				<source></source>
+			</trans-unit>
+		
+			
+		</body>
+	</file>
+</xliff>
